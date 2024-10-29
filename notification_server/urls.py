@@ -21,6 +21,6 @@ from myapp.views import mail_send_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('myapp.urls.sms_urls')),
+    path('sms/', include('myapp.urls.sms_urls'), name='send-sms'),
     path('mail/', include('myapp.urls.mail_urls'), name='send-email')
 ]

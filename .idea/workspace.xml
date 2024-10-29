@@ -4,30 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="853a2709-5db4-4c9d-95f9-5995132529e7" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/httpClient.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/notification_server.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/serializers/mail_serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/serializers/sms_serializers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/service/mail_service.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/urls/mail_urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/urls/sms_urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/views/mail_send_view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myapp/views/sms_send_view.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification_server/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification_server/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification_server/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification_server/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/notification_server/wsgi.py" afterDir="false" />
+    <list default="true" id="853a2709-5db4-4c9d-95f9-5995132529e7" name="변경" comment="driven_notification server 구성 완료">
+      <change afterPath="$PROJECT_DIR$/myapp/models/sms_model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myapp/service/sms_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/serializers/sms_serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/serializers/sms_serializers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/views/sms_send_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/views/sms_send_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification_server/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/notification_server/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +41,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;GolDHoon&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Driven-Organization/driven_notification.git&quot;,
+    &quot;accountId&quot;: &quot;1c3a4003-ec84-4f00-8cba-2058a5500235&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -70,9 +65,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Django 서버.notification_server.executor": "Debug",
+    "HTTP 요청.notification_server-endpoints_1 | #1.executor": "Run",
     "HTTP 요청.notification_server-endpoints_2 | #1.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
     "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
@@ -97,12 +94,16 @@
       <recent name="C:\workspace\prj\notification_server\myapp\serializers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\workspace\prj\notification_server\myapp\service" />
       <recent name="C:\workspace\prj\notification_server" />
+      <recent name="C:\workspace\prj\notification_server\myapp\models" />
+      <recent name="C:\workspace\prj\notification_server\myapp\service" />
       <recent name="C:\workspace\prj\notification_server\myapp\serializers" />
     </key>
   </component>
   <component name="RunManager" selected="Django 서버.notification_server">
+    <configuration name="notification_server-endpoints_1 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/notification_server-endpoints_1.http" requestIdentifier="#1" runType="단일 요청 실행">
+      <method v="2" />
+    </configuration>
     <configuration name="notification_server-endpoints_2 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/notification_server-endpoints_2.http" requestIdentifier="#1" runType="단일 요청 실행">
       <method v="2" />
     </configuration>
@@ -133,10 +134,12 @@
     </configuration>
     <list>
       <item itemvalue="Django 서버.notification_server" />
+      <item itemvalue="HTTP 요청.notification_server-endpoints_1 | #1" />
       <item itemvalue="HTTP 요청.notification_server-endpoints_2 | #1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP 요청.notification_server-endpoints_1 | #1" />
         <item itemvalue="HTTP 요청.notification_server-endpoints_2 | #1" />
       </list>
     </recent_temporary>
@@ -158,12 +161,34 @@
       <option name="presentableId" value="Default" />
       <updated>1730075713489</updated>
       <workItem from="1730075739760" duration="22859000" />
-      <workItem from="1730103494965" duration="3402000" />
+      <workItem from="1730103494965" duration="11454000" />
+      <workItem from="1730172084094" duration="7290000" />
     </task>
+    <task id="LOCAL-00001" summary="driven_notification server 구성 완료">
+      <option name="closed" value="true" />
+      <created>1730108342538</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730108342538</updated>
+    </task>
+    <task id="LOCAL-00002" summary="driven_notification server 구성 완료">
+      <option name="closed" value="true" />
+      <created>1730108491601</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730108491601</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="driven_notification server 구성 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value="driven_notification server 구성 완료" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

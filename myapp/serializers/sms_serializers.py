@@ -1,10 +1,11 @@
 # myapp/serializers/user_serializers.py (Python)
 
 from rest_framework import serializers
-from django.contrib.auth.models import User
+
+from myapp.models.sms_model import SendSMS
 
 
 class SmsSendSerializers(serializers.ModelSerializer):
     class Meta:
-        model = User
-        fields = ['id', 'username', 'email']
+        model = SendSMS
+        fields = ['CMID', 'REQUEST_TIME', 'SEND_TIME', 'MSG_TYPE', 'DEST_PHONE', 'SEND_PHONE', 'MSG_BODY']
