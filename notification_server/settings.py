@@ -26,7 +26,9 @@ SECRET_KEY = 'django-insecure-&pi)8@)x3*qn&qmpbqfb@)(!l4po@7!al#yn87)#@njyup3-f^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'driven-notification.xyz'
+]
 
 
 # Application definition
