@@ -16,8 +16,8 @@ def send_email(receiver_email, subject, body):
     msg.attach(MIMEText(body, 'plain'))
 
     current_directory = os.path.dirname(os.path.abspath(__file__))
-    cert_path = os.path.abspath('C:\\workspace\\prj\\notification_server\\myapp\\service\\cert.pem')
-    key_path = os.path.abspath('C:\\workspace\\prj\\notification_server\\myapp\\service\\key.pem')
+    cert_path = '/etc/ssl/certs/driven-notification.xyz_crt.pem'
+    key_path = '/etc/ssl/certs/driven-notification.xyz_key.pem'
 
     key_password = 'emflqms1!'  # 키 암호 입력
 
